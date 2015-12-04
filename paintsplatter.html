@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>Paint Splatter</title>
+			<style>
+				body{
+				background-color: black;
+				color: white
+			   }
+   				canvas{
+					border-style: dotted;
+    				border-width: 5px;
+   					}
+   				
+  			</style>
+ 		</head>
+ 		<body>
+		<center>
+   				<img src="https://www.imageupload.co.uk/images/2015/12/02/paintsplatter.png" border="0">
+                <br>
+				<br>
+   				<canvas id="mycanvas" onclick="drawCircle()"  width="800" height="500"></canvas>
+                <br>
+                <br>
+                <button id="clear" onclick="clearCanvas()">Clear Canvas</button>
+  			</center>
+  			<script>
+				var c=document.getElementById("mycanvas");
+				var ctx = c.getContext("2d");
+
+				
+				
+
+				function drawCircle(){
+					ctx.fillStyle=getRandomColor();
+					for( var i = 0; i < 5; i++){
+						var radius = Math.random()*18;
+						var xpos = (Math.random()*(c.width-radius-20))+radius;
+						var ypos = (Math.random()*(c.height-radius-20))+radius;
+						ctx.beginPath();
+						ctx.arc(xpos, ypos, radius, 0, 2*Math.PI);
+						ctx.fill();
+				}
+			   }
+				function clearCanvas(){
+					
+					ctx.beginPath();
+					ctx.rect(0,0,800,500);
+					ctx.fillStyle="black";
+					ctx.fill();
+					}
+				
+				
+				function getRandomColor() {    //from StackOverflow
+					var letters = '0123456789ABCDEF'.split('');
+					var color = '#';
+					for (var i = 0; i < 6; i++ ) {
+						color += letters[Math.floor(Math.random() * 16)];
+					}
+				return color;
+				}
+
+			</script>
+ 	</body>
+</html>
