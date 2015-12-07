@@ -64,28 +64,42 @@
 			var x = 200;
 			var y = 100;
 			var radius = 22;
+			var c=document.getElementById("mycanvas");
+			var ctx = c.getContext("2d");
 			function startBall(){
-				setInterval(launchBall, 20);
+				setInterval(launchBall, 1);
 			}
 			
-			function launchBall(){
-				if (x == 475){
-					dx = -1;
+			function checkWalls(){
+				// Bounce off right wall
+				if(x + radius >  c.width){
+					x--;				
 				}
-				if (x ==25){
-					dx = 1;	
+				
+				// Bounce off left wall
+				if(x - radius < 0){
+					x++
 				}
-				if (y == 475){
-					dy = -1;	
+				
+				// Bounce off bottom wall
+				if(y + radius > c.height){
+					y--
 				}
-				if (y == 25){
-					dy = 1;	
+				
+				// Bounce off top wall
+				if(y - radius < 0){
+					y++
 				}
+				
+				/*function commit(x){
+					var direction = x;
+					if (direction == "up")	
+				}*/
 			}
 			function launchBall(){
-				var c=document.getElementById("mycanvas");
-				var ctx = c.getContext("2d");
-				ctx.clearRect(0, 0, 500, 500);
+				
+				ctx.clearRect(0, 0, 500, 500);			
+				checkWalls();
 				ctx.beginPath();
 				ctx.arc(x,y,radius,0,2*Math.PI);
 				ctx.fillStyle="white";
