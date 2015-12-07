@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Bouncing ball</title>
+        <style>
+				body{
+					background-color: #343434;
+					color: white;
+					}
+				h1 {
+					font-family: "estilo-script";
+					color: white;
+					font-size: 250%;
+				}
+				
+   				canvas{
+					border-style: dotted;
+    				border-width: 5px;
+   					}
+					
+					.myButton {
+						background-color:#343434;
+						-moz-border-radius:42px;
+						-webkit-border-radius:42px;
+						border-radius:42px;
+						border:2px solid #ffffff;
+						display:inline-block;
+						cursor:pointer;
+						color:#ffffff;
+						font-family:estilo-regular;
+						font-size:17px;
+						padding:8px 12px;
+						text-decoration:none;
+					}
+					.myButton:hover {
+						background-color:#737373;
+					}
+					.myButton:active {
+						position:relative;
+						top:1px;
+					}	
+			
+   				
+  			</style>
+        
+    </head>
+    
+    <body>
+    	<center>
+        	<h1>Bouncing Ball</h1>
+            <br>
+            <br>
+            <a onclick="startBall()" class="myButton">Bounce!</a>
+            <br>
+            <br>
+            <canvas id="mycanvas" height = "500" width = "500"></canvas>
+        </center>
+        <script>
+			var dx = 1;
+			var dy = -1;
+			var x = 200;
+			var y = 100;
+			var radius = 22;
+			function startBall(){
+				setInterval(launchBall, 20);
+			}
+			
+			function launchBall(){
+				if (x == 475){
+					dx = -1;
+				}
+				if (x ==25){
+					dx = 1;	
+				}
+				if (y == 475){
+					dy = -1;	
+				}
+				if (y == 25){
+					dy = 1;	
+				}
+			}
+			function launchBall(){
+				var c=document.getElementById("mycanvas");
+				var ctx = c.getContext("2d");
+				ctx.clearRect(0, 0, 500, 500);
+				ctx.beginPath();
+				ctx.arc(x,y,radius,0,2*Math.PI);
+				ctx.fillStyle="white";
+				ctx.fill();
+				
+				x = x + dx;
+				y = y + dy;
+			}
+		</script>
+    </body>
+</html>
