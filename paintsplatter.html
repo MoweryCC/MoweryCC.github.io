@@ -4,25 +4,54 @@
   		<title>Paint Splatter</title>
 			<style>
 				body{
-				background-color: black;
-				color: white
-			   }
+					background-color: #343434;
+					color: white;
+					}
+				h1 {
+					font-family: "kinescope";
+					color: white;
+					font-size: 250%;
+				}
+				
    				canvas{
 					border-style: dotted;
     				border-width: 5px;
    					}
+					
+					.myButton {
+			background-color:#343434;
+			-moz-border-radius:42px;
+			-webkit-border-radius:42px;
+			border-radius:42px;
+			border:2px solid #ffffff;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-family:acumin-pro;
+			font-size:17px;
+			padding:8px 12px;
+			text-decoration:none;
+		}
+		.myButton:hover {
+			background-color:#737373;
+		}
+		.myButton:active {
+			position:relative;
+			top:1px;
+		}	
+			
    				
   			</style>
  		</head>
  		<body>
 		<center>
-   				<img src="https://www.imageupload.co.uk/images/2015/12/02/paintsplatter.png" border="0">
-                <br>
+		  		<h1>Paint Splatter</h1>
+          		<br>
 				<br>
    				<canvas id="mycanvas" onclick="drawCircle()"  width="800" height="500"></canvas>
                 <br>
                 <br>
-                <button id="clear" onclick="clearCanvas()">Clear Canvas</button>
+                <a onclick="clearCanvas()" class="myButton">Clear Canvas</a>
   			</center>
   			<script>
 				var c=document.getElementById("mycanvas");
@@ -46,7 +75,7 @@
 					
 					ctx.beginPath();
 					ctx.rect(0,0,800,500);
-					ctx.fillStyle="black";
+					ctx.fillStyle= "#343434";
 					ctx.fill();
 					}
 				
