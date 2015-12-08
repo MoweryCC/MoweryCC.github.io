@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Caterpillar</title>
+        <style>
+			body{
+				background-color: black;
+				color: white;
+			}
+			canvas{
+				border-style: solid;
+				border-width: 5px;	
+			}
+		</style>
+	</head>
+	<body>
+    	<center>
+        	<img src= "https://www.imageupload.co.uk/images/2015/12/01/caterpillar.png">
+            <br>
+        	<input id="age" type="number" onchange="drawCircle(this.value)"></input>
+            <br>
+            <br>
+            <br>
+            <canvas id="mycanvas" width="800" height="250"></canvas>
+        </center>
+        <script>
+				var c = document.getElementById("mycanvas");
+    			var ctx = c.getContext("2d");		   	
+				
+				
+				
+				function drawSquare(){
+
+					ctx.beginPath();
+					ctx.rect(0,0,c.width,c.height);
+					ctx.fillStyle="black";
+					ctx.fill();
+
+
+				}		
+						
+				function drawCircle(x){
+						
+						var radius = (c.width/x)/2;
+						
+						drawSquare();
+						
+						for(var i = 0; i<x; i++){
+							
+							ctx.beginPath();
+							ctx.arc(radius + i * (2 * radius), c.height/2 ,radius, 0, 2*Math.PI);
+							ctx.stroke();
+							ctx.fillStyle=getRandomColor();
+							ctx.fill();
+							}
+						}
+				function getRandomColor() {    //from StackOverflow
+					var letters = '0123456789ABCDEF'.split('');
+					var color = '#';
+					for (var i = 0; i < 6; i++ ) {
+						color += letters[Math.floor(Math.random() * 16)];
+					}
+				return color;
+				}
+			
+        </script>
+    </body>
+</html>
