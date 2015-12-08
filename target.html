@@ -14,8 +14,9 @@
         
         canvas{
             border-style: solid;
-            border-width: 1px;
-            }
+            border-width: 0px;
+            cursor:none;
+			}
             
             .myButton {
                 background-color:#343434;
@@ -44,13 +45,48 @@
     
     <body>
     	<center>
-        	<h1>Target</h1>
-        	<canvas id = "mycanvas" width = "500" height = "500"></canvas>
+        	<!--<h1>Target</h1>-->
+            <br>
+        	<canvas id = "mycanvas" width = "500" height = "500" onmouseout="clear"></canvas>
         </center>
         <script>
 			var c=document.getElementById("mycanvas");
 			var ctx = c.getContext("2d");
+			var cursorX;
+			var cursorY; 
 			
+			document.onmousemove = function(e){
+				
+				cursorX = e.pageX;
+				cursorY = e.pageY;
+				cursorX -= 390;
+				cursorY -= 29;
+				ctx.clearRect(0, 0, c.width, c.height);
+				drawVertical();
+				drawHorizontal();
+				
+			}
+				
+			function drawVertical(){
+				ctx.moveTo(cursorX, 0);
+				ctx.lineTo(cursorX, c.height);
+				ctx.closePath();
+				ctx.strokeStyle = "white";
+				ctx.stroke();
+			}
+			
+			function drawHorizontal(){
+				
+				ctx.beginPath();
+				ctx.moveTo(0, cursorY);
+				ctx.lineTo(c.width, cursorY);
+				ctx.closePath();
+				ctx.strokeStyle = "white" ;
+				ctx.stroke();
+			}
+			function clear(){
+				ctx.clearRect(0, 0, c.width, c.height);	
+			}
 		</script>
     </body>
 </html>
