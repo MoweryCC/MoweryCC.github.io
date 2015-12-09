@@ -16,7 +16,7 @@
         
         canvas{
             border-style: dotted;
-            border-width: 5px;
+            border-width: 1px;
             }
             
             .myButton {
@@ -50,61 +50,40 @@
         	<h1>Bouncing Ball</h1>
             <br>
             <br>
-            <a onclick="startBall()" class="myButton">Bounce!</a>
+            <a onclick="start()" class="myButton">Bounce!</a>
             <br>
             <br>
             <canvas id="mycanvas" height = "500" width = "500"></canvas>
         </center>
         <script>
-			var dx = 1;
-			var dy = -1;
-			var x = 200;
-			var y = 100;
-			var radius = 22;
+			var ctx;
 			var c=document.getElementById("mycanvas");
 			var ctx = c.getContext("2d");
-			function startBall(){
-				setInterval(launchBall, 1);
+			var dx = 10;
+			var dy = 10;
+			var x = c.width / 3;
+			var y = c.height / 3;
+			var radius = 22;
+			
+			
+			function start(){
+				setInterval(ballz, 1);	
 			}
 			
-			function checkWalls(){
-				// Bounce off right wall
-				if(x + radius >  c.width){
-					x--;				
-				}
+			function ballz(){
 				
-				// Bounce off left wall
-				if(x - radius < 0){
-					x++
-				}
-				
-				// Bounce off bottom wall
-				if(y + radius > c.height){
-					y--
-				}
-				
-				// Bounce off top wall
-				if(y - radius < 0){
-					y++
-				}
-				
-				/*function commit(x){
-					var direction = x;
-					if (direction == "up")	
-				}*/
-			}
-			function launchBall(){
-				
-				ctx.clearRect(0, 0, 500, 500);			
-				checkWalls();
+				ctx.clearRect(0, 0, 500, 500);		
 				ctx.beginPath();
 				ctx.arc(x,y,radius,0,2*Math.PI);
 				ctx.fillStyle="white";
 				ctx.fill();
-				
-				x = x + dx;
-				y = y + dy;
+				if ( x < 22 || x > 478) dx =- dx;
+				if ( y < 22 || y > 478) dy =- dy;
+				x += dx;
+				y -=dy;
 			}
+			
+			
 		</script>
     </body>
 </html>
