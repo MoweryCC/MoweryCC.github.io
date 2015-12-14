@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Blaster Master</title>
+        
+		<style>
+        body{
+            background-color: #343434;
+            color: white;
+            }
+        h1 {
+            font-family: "estilo-script";
+            color: white;
+            font-size: 250%;
+        }
+        
+        canvas{
+            border-style: dotted;
+            border-width: 1px;
+            }
+            
+            .myButton {
+                background-color:#343434;
+                -moz-border-radius:42px;
+                -webkit-border-radius:42px;
+                border-radius:42px;
+                border:2px solid #ffffff;
+                display:inline-block;
+                cursor:pointer;
+                color:#ffffff;
+                font-family:estilo-regular;
+                font-size:17px;
+                padding:8px 12px;
+                text-decoration:none;
+            }
+            .myButton:hover {
+                background-color:#737373;
+            }
+            .myButton:active {
+                position:relative;
+                top:1px;
+            }	
+    
+	</style>
+        
+    </head>
+    
+    <body>
+    	<center>
+        	<h1>Blaster Master</h1>
+            <br>
+            <br>
+            <a onclick="start()" class="myButton">Begin!</a>
+            <br>
+            <br>
+            <canvas id="mycanvas" height = "500" width = "500"></canvas>
+        </center>
+        <script>
+			var ctx;
+			var c=document.getElementById("mycanvas");
+			var ctx = c.getContext("2d");
+			var dx = 10;
+			var dy = 10;
+			var x = c.width / 3;
+			var y = c.height / 3;
+			var radius = 22;
+			
+			
+			function start(){
+				setInterval(ballz, 1);	
+			}
+			
+			function ballz(){
+				
+				ctx.clearRect(0, 0, 500, 500);		
+				ctx.beginPath();
+				ctx.arc(x,y,radius,0,2*Math.PI);
+				ctx.fillStyle="white";
+				ctx.fill();
+				if ( x < radius || x > 500 - radius) dx =- dx;
+				if ( y < radius || y > 500 - radius) dy =- dy;
+				x += dx;
+				y -=dy;
+			}
+			
+			
+			
+		</script>
+    </body>
+</html>
