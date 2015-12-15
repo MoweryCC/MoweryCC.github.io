@@ -59,8 +59,10 @@
 			var ctx;
 			var c=document.getElementById("mycanvas");
 			var ctx = c.getContext("2d");
-			var dx = 10;
-			var dy = 10;
+			var ctx2 = c.getContext("2d");
+			var circle = c.getContext("2d");
+			var dx = 1;
+			var dy = 1;
 			var x = c.width / 3;
 			var y = c.height / 3;
 			var radius = 22;
@@ -72,17 +74,50 @@
 			
 			function ballz(){
 				
-				ctx.clearRect(0, 0, 500, 500);		
-				ctx.beginPath();
-				ctx.arc(x,y,radius,0,2*Math.PI);
-				ctx.fillStyle="white";
-				ctx.fill();
+				circle.clearRect(0, 0, 500, 500);		
+				circle.beginPath();
+				circle.arc(x,y,radius,0,2*Math.PI);
+				circle.fillStyle="white";
+				circle.fill();
 				if ( x < radius || x > 500 - radius) dx =- dx;
 				if ( y < radius || y > 500 - radius) dy =- dy;
 				x += dx;
 				y -=dy;
+				
+			
+			document.onmousemove = function(e){
+				
+				cursorX = e.pageX;
+				cursorY = e.pageY;
+				cursorX -= 390;
+				cursorY -= 29;
+				ctx.clearRect(0, 0, c.width, c.height);
+				drawVertical();
+				drawHorizontal();
+				
+			}
+				
+			function drawVertical(){
+				ctx.moveTo(cursorX, cursorY - 20);
+				ctx.lineTo(cursorX, cursorY + 20);
+				ctx.closePath();
+				ctx.strokeStyle = "white";
+				ctx.stroke();
 			}
 			
+			function drawHorizontal(){
+				
+				ctx2.beginPath();
+				ctx2.moveTo(cursorX - 20, cursorY);
+				ctx2.lineTo(cursorX + 20, cursorY);
+				ctx2.closePath();
+				ctx2.strokeStyle = "white";
+				ctx2.stroke();
+			}
+			function clear(){
+				ctx.clearRect(0, 0, c.width, c.height);	
+			}
+			}
 			
 			
 		</script>
