@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>toadstool</title>
+		<style>
+			body{
+				background-color: black;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<img id="mushroom" height="100px" width="100px" onmouseover="startTimer()" onmouseout="stopTimer()"  src="https://www.imageupload.co.uk/images/2015/11/20/toad.png"></img>
+		</center>
+		
+		<script>
+		
+			var timerUp;
+			var timerDown;
+			
+			function startTimer(){
+					clearInterval(timerDown);
+					timerUp = setInterval(bigPicture, 5);
+				}
+			
+			function stopTimer(){
+					clearInterval(timerUp);
+					timerDown = setInterval(smallPicture, 5);
+				}
+				
+			function BigPicture(){
+					var image = document.getElementById("mushroom");
+					if(image.width < 1000 && image.height < 1000){
+						image.width += 1;
+						image.height += 1;
+						}
+				}
+			function smallPicture(){
+					var image = document.getElementById("mushroom");
+					if(image.width > 100 && image.height > 100){
+						image.width -= 1;
+						image.height -= 1;
+						}
+				
+				}
+		
+			
+			/*var increaseInterval;
+			var decreaseInterval;
+			
+			function enlargeStep(){
+				increaseInterval = setInterval(enlarge, 50);
+				enlarge();
+			}
+			
+			function shrinkStep(){
+				decreaseInterval = setInterval(shrink, 50);
+				shrink();
+				}
+			
+			function enlarge(){
+				document.getElementById('mushroom').height += 100;
+				document.getElementById('mushroom').width += 100;
+				
+			}
+			function shrink(){
+				document.getElementById('mushroom').height -= 100;
+				document.getElementById('mushroom').width -= 100;
+			}
+			
+			function end(){
+				clearInterval(enlargeStep);
+				clearInterval(shrinkStep);
+				}
+				*/
+		</script>
+	</body>
+</html>

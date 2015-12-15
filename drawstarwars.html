@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				background-image: url("https://www.imageupload.co.uk/images/2015/11/10/starrysky.png");
+				color: white;
+			}
+			img {
+					height: 100px;
+				}
+			}
+		</style>
+			
+	</head>
+	<body>
+		<center>
+			<h1>How much Star Wars can you handle?</h1>
+			<input id="numFish" type="number" onchange="drawFish(this.value)"></input>
+			<br>
+			<div id="potato">
+		</div>
+		<script>
+			function drawFish(x) {
+				document.getElementById("potato").innerHTML ="";
+				
+				
+				while (x >= 10){
+					document.getElementById("potato").innerHTML += '<img src="http://www.officialpsds.com/images/thumbs/Star-Wars-ATAT-psd74146.png">';
+					x=x-10;
+				}	
+				
+				while (x >= 5){
+						document.getElementById("potato").innerHTML += '<img src="https://www.imageupload.co.uk/images/2015/11/09/Tiewing.png">';
+						x=x-5;
+					}
+				
+				while (x >= 1){
+						document.getElementById("potato").innerHTML += '<img src="http://img01.deviantart.net/fbd3/i/2014/325/1/0/stormtrooper_helmet___star_wars_vector_by_firedragonmatty-d8752th.png">';
+						x=x-1;
+					}
+			
+			}
+		</script>
+		</center>
+	</body>
+</html>

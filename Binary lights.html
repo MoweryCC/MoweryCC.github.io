@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <title>Binary Lights</title>
+        <style>
+            body{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <img id="light1" src ="https://www.imageupload.co.uk/images/2015/11/09/Lighte5f9a.png" height="250" onclick="lightUp('light1')"></img>
+            <img id="light2" src ="https://www.imageupload.co.uk/images/2015/11/09/Lighte5f9a.png" height="250" onclick="lightUp('light2')"></img>
+            <img id="light3" src ="https://www.imageupload.co.uk/images/2015/11/09/Lighte5f9a.png" height="250" onclick="lightUp('light3')"></img>
+            <img id="light4" src ="https://www.imageupload.co.uk/images/2015/11/09/Lighte5f9a.png" height="250" onclick="lightUp('light4')"></img>
+</center><br>
+        <script>
+				function lightUp(id) {
+                    var image = document.getElementById(id);
+    				if(image.src.match ("2015/11/09")){
+                        image.src = "https://www.imageupload.co.uk/images/2015/11/11/lighton.png";
+					} else {
+					   image.src = "https://www.imageupload.co.uk/images/2015/11/09/Lighte5f9a.png";
+					}
+                }
+        </script>
+    </body>
+</html>
