@@ -51,9 +51,10 @@
         </center>
         <script>
 			var c=document.getElementById("mycanvas");
-			var ctx = c.getContext("2d");
-			var cursorX;
-			var cursorY; 
+			var ctx = c.getContext("2d");    //hline
+			var ctx2 = c.getContext("2d"); //wline
+			var cursorX=0;
+			var cursorY=0; 
 			
 			document.onmousemove = function(e){
 				
@@ -68,8 +69,8 @@
 			}
 				
 			function drawVertical(){
-				ctx.moveTo(cursorX, 0);
-				ctx.lineTo(cursorX, c.height);
+				ctx.moveTo(cursorX, cursorY - 20);
+				ctx.lineTo(cursorX, cursorY + 20);
 				ctx.closePath();
 				ctx.strokeStyle = "white";
 				ctx.stroke();
@@ -77,12 +78,12 @@
 			
 			function drawHorizontal(){
 				
-				ctx.beginPath();
-				ctx.moveTo(0, cursorY);
-				ctx.lineTo(c.width, cursorY);
-				ctx.closePath();
-				ctx.strokeStyle = "red";
-				ctx.stroke();
+				ctx2.beginPath();
+				ctx2.moveTo(cursorX - 20, cursorY);
+				ctx2.lineTo(cursorX + 20, cursorY);
+				ctx2.closePath();
+				ctx2.strokeStyle = "white";
+				ctx2.stroke();
 			}
 			function clear(){
 				ctx.clearRect(0, 0, c.width, c.height);	
