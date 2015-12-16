@@ -47,13 +47,13 @@
     
     <body>
     	<center>
-        	<h1>Blaster Master</h1>
-            <br>
-            <br>
-            <a onclick="start()" class="myButton">Begin!</a>
-            <br>
-            <br>
             <canvas id="mycanvas" height = "500" width = "500"></canvas>
+            <h1>Blaster Master</h1>
+            <br>
+            <br>
+            <a onclick="ballz(), setInterval, 100" class="myButton">Begin!</a>
+            <br>
+            <br>
         </center>
         <script>
 			var ctx;
@@ -68,9 +68,6 @@
 			var radius = 22;
 			
 			
-			function start(){
-				setInterval(ballz, 1);	
-			}
 			
 			function ballz(){
 				
@@ -94,26 +91,25 @@
 				ctx.clearRect(0, 0, c.width, c.height);
 				drawVertical();
 				drawHorizontal();
+				ctx2.beginPath();
 				
-			}
+				//draws horizontal line
+				ctx2.moveTo(cursorX - 20, cursorY);
+				ctx2.lineTo(cursorX + 20, cursorY);
+				ctx2.closePath();
+				ctx2.strokeStyle = "white";
+				ctx2.stroke();
 				
-			function drawVertical(){
+				//draws vertical line
 				ctx.moveTo(cursorX, cursorY - 20);
 				ctx.lineTo(cursorX, cursorY + 20);
 				ctx.closePath();
 				ctx.strokeStyle = "white";
 				ctx.stroke();
 			}
-			
-			function drawHorizontal(){
-				
-				ctx2.beginPath();
-				ctx2.moveTo(cursorX - 20, cursorY);
-				ctx2.lineTo(cursorX + 20, cursorY);
-				ctx2.closePath();
-				ctx2.strokeStyle = "white";
-				ctx2.stroke();
 			}
+				
+				
 			function clear(){
 				ctx.clearRect(0, 0, c.width, c.height);	
 			}
