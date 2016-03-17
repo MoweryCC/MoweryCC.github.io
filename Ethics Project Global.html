@@ -54,6 +54,23 @@
         color: dimgray;
     }
     
+    h2.three {
+        text-align: left;
+        color: #5877E5;
+        font-family: 'Helvetica', serif;
+        font-size: 2vh;
+        opacity: .75;
+        line-height: 2em;
+        padding-left: 5%;
+    }
+    
+    h2.three:hover {
+        background-color: #f2f2f2;
+        height: 40px;
+        width: 263px;
+        ;
+    }
+    
     h3 {
         text-align: left;
         padding-left: 20px;
@@ -150,20 +167,25 @@
     }
     
     img {
+        float: left;
+    }
+    
+    img.three {
         width: 100px;
-        height: 60px;
+        height: 80px;
+        float: none;
     }
     
     img.one {
-        float: center;
-        height: 300px;
+        float: none;
+        height: 20%;
         width: 400px;
     }
     
     img.two {
-        float: center;
-        height: 250px;
-        width: 35o0px;
+        float: none;
+        height: 200px;
+        width: 300px;
     }
     
     sup {
@@ -180,6 +202,7 @@
         padding-left: 5%;
         padding-right: 5%;
         line-height: 3em;
+        text-align: left;
     }
     
     canvas {
@@ -197,7 +220,7 @@
 <body onLoad="initiate()">
     <div id="container-left">
         <!--Sidebar & links-->
-        <a href="Ethics%20Project%20Landing.html"><abbr title=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/No_colonies_blank_world_map.png" width="170px" class="two"></abbr></a>
+        <a href="Ethics%20Project%20Landing.html"><abbr title=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/No_colonies_blank_world_map.png" width="170px" class=""></abbr></a>
         <br>
         <br>
         <br>
@@ -205,31 +228,31 @@
         <br>
         <br>
         <a href="Ethics%20Project%20Landing.html">
-            <h2 class="one">
+            <h2 class="three">
                 <abbr title="Home Page">Home</abbr>
             </h2>
         </a>
 
         <a href="Ethics%20Project%20History.html">
-            <h2 class="one">
+            <h2 class="three">
                 <abbr title="Go to Resources">History</abbr>
             </h2>
         </a>
 
         <a href="Ethics%20Project%20Current.html">
-            <h2 class="one">                
+            <h2 class="three">                
                 <abbr title="Settings">Current Issues</abbr>
             </h2>
         </a>
 
         <a href="Ethics%20Project%20Map.html">
-            <h2 class="one">
+            <h2 class="three">
                 <abbr title="Settings">Map</abbr>
             </h2>
         </a>
 
         <a href="Ethics%20Project%20Example.html">
-            <h2 class="one">               
+            <h2 class="three">               
                 <abbr title="Settings">Example</abbr>
             </h2>
         </a>
@@ -253,7 +276,9 @@
 
                     </p>
 
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Alternative_Energies.jpg" class="one">
+                    <center>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Alternative_Energies.jpg" class="one">
+                    </center>
                 </div>
                 <div id="content-two">
                     <!--Main Content Two-->
@@ -265,7 +290,9 @@
 
                     <p class="one">While economists can argue whether the nation as a whole benefits from the current episode of globalization, most would predict that some workers pay the costs disproportionately. Indeed, current data suggests that gains are increasingly concentrated at the upper end of the income spectrum with earnings at the middle falling behind. Politicians can hardly expect support for a policy of continued openness if they insist on pursuing tax cut policies that exacerbate these distributive trends and providing health and other benefits through the tax system in a manner that favors the already advantaged</p>
 
-                    <img src="http://workingcapitalreview.com/wp-content/uploads/2015/06/globalization-globe.jpg" class="two">
+                    <center>
+                        <img src="http://workingcapitalreview.com/wp-content/uploads/2015/06/globalization-globe.jpg" class="two">
+                    </center>
                 </div>
                 <div id="content-three">
                     <!--Footer-->
