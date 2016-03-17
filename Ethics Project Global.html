@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--Do not copy-->
+<html>
+<!--Property of Brandon Blessinger-->
+<style>
+    body {
+        background-color: #f2f2f2;
+        height: 1080px;
+    }
+    
+    h1 {
+        text-align: left;
+        color: white;
+        font-family: sans-serif;
+        padding-left: 5%;
+        font-size: 4vh;
+        margin-top: 20px;
+    }
+    
+    h1:hover {
+        color: lightsteelblue;
+    }
+    
+    h2 {
+        /*text-align: center;*/
+        color: lightgray;
+        font-family: 'Helvetica', serif;
+        font-size: 2vh;
+        opacity: .75;
+        padding-left: 20%;
+    }
+    
+    h2.one {
+        text-align: left;
+        color: #5877E5;
+        font-family: 'Helvetica', serif;
+        font-size: 2vh;
+        opacity: .75;
+        line-height: 2em;
+        padding-left: 5%;
+    }
+    
+    h2.two {
+        text-align: center;
+        color: black;
+        font-family: 'Helvetica', serif;
+        font-size: 2.1vh;
+        opacity: .75;
+        line-height: 4em;
+        padding-left: 0%;
+    }
+    
+    h2.two:hover {
+        color: dimgray;
+    }
+    
+    h3 {
+        text-align: left;
+        padding-left: 20px;
+        color: grey;
+        font-family: Roboto;
+        font-size: 3.5vh;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    #container-main {
+        position: relative;
+    }
+    
+    #container-head {
+        width: 86%;
+        height: 190px;
+        background-color: #5877E5;
+        opacity: 1;
+        float: right;
+        position: fixed;
+        margin-left: 263px;
+        padding-top: 0%;
+    }
+    
+    #container-left {
+        width: 263px;
+        height: 1080px;
+        background-color: white;
+        opacity: 1;
+        float: left;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        border-left: 0px;
+        padding-left 0px;
+        position: fixed;
+    }
+    
+    #container-main-content {
+        width: 86%;
+        height: 1950px;
+        background-color: #f2f2f2;
+        margin-bottom: 10px;
+        margin-left: 265px;
+        margin-top: 250px;
+        position: absolute;
+    }
+    
+    #content-one {
+        width: 85%;
+        height: 800px;
+        background-color: white;
+        border-radius: 3px;
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 110px;
+        box-shadow: 8px 8px 20px #888888;
+    }
+    
+    #content-two {
+        width: 85%;
+        height: 800px;
+        background-color: white;
+        border-radius: 3px;
+        position: static;
+        margin-top: 40px;
+        box-shadow: 8px 8px 20px #888888;
+    }
+    
+    #content-three {
+        width: 85%;
+        height: 80px;
+        background-color: inherit;
+        position: static;
+        margin-top: 5px;
+    }
+    
+    b {
+        font-size: 15px;
+    }
+    
+    b.one {
+        color: lightgray;
+        font-size: 2.2vh;
+        font-style: normal;
+    }
+    
+    b.one:hover {
+        color: dimgray;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        width: 100px;
+        height: 60px;
+    }
+    
+    img.one {
+        float: center;
+        height: 300px;
+        width: 400px;
+    }
+    
+    img.two {
+        float: center;
+        height: 250px;
+        width: 35o0px;
+    }
+    
+    sup {
+        font-size: 2vh;
+    }
+    
+    p {
+        font-family: 'Arial Black';
+        font-size: 1.4vh;
+        color: grey;
+    }
+    
+    p.one {
+        padding-left: 5%;
+        padding-right: 5%;
+        line-height: 3em;
+    }
+    
+    canvas {
+        background-color: darkgrey;
+        background-image: url();
+        border-radius: 5px;
+    }
+</style>
+
+<head>
+    <title>Economic Failure: Intervention</title>
+    <link rel="failure" href="http://www.arborinvestmentplanner.com/wp-content/uploads/2013/02/StockMarketCrash.jpg">
+</head>
+
+<body onLoad="initiate()">
+    <div id="container-left">
+        <!--Sidebar & links-->
+        <a href="Ethics%20Project%20Landing.html"><abbr title=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/No_colonies_blank_world_map.png" width="170px" class="two"></abbr></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="Ethics%20Project%20Landing.html">
+            <h2 class="one">
+                <abbr title="Home Page">Home</abbr>
+            </h2>
+        </a>
+
+        <a href="Ethics%20Project%20History.html">
+            <h2 class="one">
+                <abbr title="Go to Resources">History</abbr>
+            </h2>
+        </a>
+
+        <a href="Ethics%20Project%20Current.html">
+            <h2 class="one">                
+                <abbr title="Settings">Current Issues</abbr>
+            </h2>
+        </a>
+
+        <a href="Ethics%20Project%20Map.html">
+            <h2 class="one">
+                <abbr title="Settings">Map</abbr>
+            </h2>
+        </a>
+
+        <a href="Ethics%20Project%20Example.html">
+            <h2 class="one">               
+                <abbr title="Settings">Example</abbr>
+            </h2>
+        </a>
+
+    </div>
+    <div id="container-main">
+        <div id="container-main-content">
+            <center>
+                <div id="content-one">
+                    <!--Main Content-->
+                    <h2 class="two">The Effect of Collapse on International Markets</h2>
+                    <p class="one">
+                        In Washington, D.C., where short-term political wrangling too often crowds out the harder and more important long-term challenges, this inaugural publication of Brookings Global Economy and Development seeks to put the spotlight squarely back on the most consequential issues demanding action.
+                    </p>
+
+                    <h2 class="two">Energy and Enviromental Security</h2>
+
+                    <p class="one">
+
+                        Although energy and environmental security are frequently argued about as separate and distinct issues, policymakers in the United States and abroad would be well advised to focus on mitigating climate change as the most effective means to the energy security end. Establishing a credible, practical and effective framework for cooperation on climate change should be the primary means of making an immediate impact by addressing energy and environmental security in a coherent policy.To address the fundamental issues of uncertainty and paralysis that surround climate policy, countries must move beyond the current set of policy recommendations that have been proposed and debated by the international community.
+
+                    </p>
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Alternative_Energies.jpg" class="one">
+                </div>
+                <div id="content-two">
+                    <!--Main Content Two-->
+                    <h2 class="two">Conflict and Poverty</h2>
+
+                    <p class="one">Contrary to the conventional wisdom that civil conflict stems from ancient ethnic hatreds or political rivalries, compelling evidence now suggests that the most powerful predictors of civil conflict are in fact weak economic growth and volatile low incomes. According to the U.K. Department for International Development, a country with $250 per capita income has a 15 percent likelihood of internal conflict over five years—many times greater than the 1 percent risk for an economy with $5,000 per capita income. In 2002, more than two-thirds of the poorest countries of the world were in conflict.</p>
+
+                    <h2 class="two">Competing in the New Era of Globalization</h2>
+
+                    <p class="one">While economists can argue whether the nation as a whole benefits from the current episode of globalization, most would predict that some workers pay the costs disproportionately. Indeed, current data suggests that gains are increasingly concentrated at the upper end of the income spectrum with earnings at the middle falling behind. Politicians can hardly expect support for a policy of continued openness if they insist on pursuing tax cut policies that exacerbate these distributive trends and providing health and other benefits through the tax system in a manner that favors the already advantaged</p>
+
+                    <img src="http://workingcapitalreview.com/wp-content/uploads/2015/06/globalization-globe.jpg" class="two">
+                </div>
+                <div id="content-three">
+                    <!--Footer-->
+                    <br>
+                    <br>
+                    <br>
+                    <p> <b class="one" style="font-size:1.7vh;padding-right:40px;">By BlessingerCoding </b> About &#124; Research &#124; Help &#124; Contact </p>
+                </div>
+            </center>
+        </div>
+        <div id="container-head">
+            <!--Top Banner-->
+            <h1>
+                <abbr title="Are you up to the challenge?">International Economics</abbr>
+                <br>
+                <sup><b class="one">United States Intervention</b></sup>
+            </h1>
+            <h2></h2>
+            <br>
+        </div>
+
+    </div>
+</body>
+<script>
+</script>
+
+</html>
