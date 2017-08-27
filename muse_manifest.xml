@@ -1,4 +1,4 @@
-<manifest alg="2" build="2017.1.0.379" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="mowerycc.github.io" resolutions="1x,2x" timestamp="1503792936423">
+<manifest alg="2" build="2017.1.0.379" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="mowerycc.github.io" resolutions="1x,2x" timestamp="1503793423679">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="about-me.css" crc="3805576397" ref="about-me"/>
@@ -7,8 +7,8 @@
     <file name="nomq_contact.css" crc="119964772" ref="contact"/>
     <file name="portfolio.css" crc="203332642" ref="portfolio"/>
     <file name="nomq_portfolio.css" crc="235410806" ref="portfolio"/>
-    <file name="index.css" crc="109730507" ref="index"/>
-    <file name="nomq_index.css" crc="42958984" ref="index"/>
+    <file name="index.css" crc="277590491" ref="index"/>
+    <file name="nomq_index.css" crc="3839323496" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:portfolio:about-me:contact"/>
@@ -54,17 +54,11 @@
     <file name="img_0005-crop-u3963.jpg" crc="3982171675" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_02502960x639.jpg" crc="3913945734" ref="index">
-      <caption webpage="index" alt=""/>
-    </file>
     <file name="u2630-44.png" crc="397911797" ref="index"/>
     <file name="u2631-44.png" crc="4083202594" ref="index"/>
     <file name="u2632-44.png" crc="3869880815" ref="index"/>
     <file name="u2881-4-a4.png" crc="509183622" ref="index"/>
     <file name="img_0005-crop-u3964.jpg" crc="4272280241" seo="true" ref="index">
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="img_02502640x426.jpg" crc="532296291" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="u1678-4.png" crc="133117441" ref="portfolio"/>
@@ -180,17 +174,11 @@
     <file name="img_0005-crop-u396_2x.jpg" crc="118504518" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="img_025021920x1278.jpg" crc="57968170" ref="index">
-      <caption webpage="index" alt=""/>
-    </file>
     <file name="u2630-4_2x2.png" crc="104426449" ref="index"/>
     <file name="u2631-4_2x2.png" crc="479168108" ref="index"/>
     <file name="u2632-4_2x2.png" crc="3946976780" ref="index"/>
     <file name="u2881-4-a_2x2.png" crc="4242283741" ref="index"/>
     <file name="img_0005-crop-u396_2x2.jpg" crc="3822604105" seo="true" ref="index">
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="img_025021536x1023.jpg" crc="446340993" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="u2630-4_2x3.png" crc="153369088" ref="index"/>
@@ -282,8 +270,29 @@
     <file name="u2906-4_2x4.png" crc="3766271585" ref="contact"/>
     <file name="u2907-4_2x4.png" crc="4258072925" ref="contact"/>
     <file name="u2908-4_2x4.png" crc="208678282" ref="contact"/>
+    <file name="hawaii-181920x1280.jpg" crc="3906539892" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hawaii-181536x1024.jpg" crc="189861745" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hawaii-181536x1024_2x.jpg" crc="4007186045" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hawaii-18960x640.jpg" crc="49539960" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hawaii-18960x640_2x.jpg" crc="3906539892" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hawaii-18640x427.jpg" crc="4165179135" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hawaii-18640x427_2x.jpg" crc="179610030" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
   </folder>
-  <file name="index.html" crc="4287763401" seo="true" mt="1503687695858" redirect="true"/>
+  <file name="index.html" crc="3843156865" seo="true" mt="1503793405310" redirect="true"/>
   <file name="portfolio.html" crc="4122788607" seo="true" mt="1503687695858" redirect="true"/>
   <file name="about-me.html" crc="3910357271" seo="true" mt="1503687695858" redirect="true"/>
   <file name="contact.html" crc="3948800336" seo="true" mt="1503687695858" redirect="true"/>
