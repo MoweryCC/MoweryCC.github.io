@@ -1,0 +1,189 @@
+<manifest alg="2" build="2017.1.0.379" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="mowerycc.github.io" resolutions="1x" timestamp="1503792665748">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="about-me.css" crc="3805576397" ref="about-me"/>
+    <file name="nomq_about-me.css" crc="370629854" ref="about-me"/>
+    <file name="contact.css" crc="443644676" ref="contact"/>
+    <file name="nomq_contact.css" crc="308537892" ref="contact"/>
+    <file name="portfolio.css" crc="203332642" ref="portfolio"/>
+    <file name="nomq_portfolio.css" crc="235410806" ref="portfolio"/>
+    <file name="index.css" crc="392019878" ref="index"/>
+    <file name="nomq_index.css" crc="230879667" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:portfolio:about-me:contact"/>
+    <file name="museutils.js" crc="17924269" ref="index:portfolio:about-me:contact"/>
+    <file name="whatinput.js" crc="86476730" ref="index:portfolio:about-me:contact"/>
+    <file name="museconfig.js" crc="278381782" ref="index:portfolio:about-me:contact"/>
+    <file name="jquery.watch.js" crc="4240030481" ref="index:portfolio:about-me:contact"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3854337258" ref="index:about-me:contact"/>
+    <file name="jquery.museresponsive.js" crc="4267800278" ref="index:portfolio:about-me:contact"/>
+    <file name="require.js" crc="3861931657" ref="index:portfolio:about-me:contact"/>
+    <file name="webpro.js" crc="416662029" ref="contact"/>
+    <file name="form_check.php" crc="234386740" ref="contact"/>
+    <file name="form_process.php" crc="281765392" ref="contact"/>
+    <file name="form-u2462.php" crc="465134544" ref="contact"/>
+  </folder>
+  <folder name="images">
+    <file name="u2630-4.png" crc="4093651395" ref="index"/>
+    <file name="u2631-4.png" crc="116589833" ref="index"/>
+    <file name="u2632-4.png" crc="133117441" ref="index"/>
+    <file name="u2881-4-a.png" crc="4232808938" ref="index"/>
+    <file name="colemowery.svg" crc="326401893" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="colemowery_poster_.png" crc="4029640208" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index:portfolio:about-me:contact"/>
+    <file name="img_0005-crop-u396.jpg" crc="3914808405" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_02502.jpg" crc="3876835791" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u2630-42.png" crc="4093651395" ref="index"/>
+    <file name="u2631-42.png" crc="116589833" ref="index"/>
+    <file name="u2632-42.png" crc="133117441" ref="index"/>
+    <file name="u2881-4-a2.png" crc="331093778" ref="index"/>
+    <file name="img_0005-crop-u3962.jpg" crc="4045790841" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u2630-43.png" crc="72504557" ref="index"/>
+    <file name="u2631-43.png" crc="4286825602" ref="index"/>
+    <file name="u2632-43.png" crc="4012642859" ref="index"/>
+    <file name="u2881-4-a3.png" crc="3875698095" ref="index"/>
+    <file name="img_0005-crop-u3963.jpg" crc="362385517" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_02502960x639.jpg" crc="3777582348" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u2630-44.png" crc="397911797" ref="index"/>
+    <file name="u2631-44.png" crc="4083202594" ref="index"/>
+    <file name="u2632-44.png" crc="3869880815" ref="index"/>
+    <file name="u2881-4-a4.png" crc="509183622" ref="index"/>
+    <file name="img_0005-crop-u3964.jpg" crc="423090734" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_02502640x426.jpg" crc="508526211" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u1678-4.png" crc="133117441" ref="portfolio"/>
+    <file name="u1680-4.png" crc="124617144" ref="portfolio"/>
+    <file name="u1681-4-a.png" crc="4093651395" ref="portfolio"/>
+    <file name="u1682-4.png" crc="116589833" ref="portfolio"/>
+    <file name="u3046-4.png" crc="4130218278" ref="portfolio"/>
+    <file name="u1678-42.png" crc="133117441" ref="portfolio"/>
+    <file name="u1680-42.png" crc="3928154728" ref="portfolio"/>
+    <file name="u1681-4-a2.png" crc="4093651395" ref="portfolio"/>
+    <file name="u1682-42.png" crc="116589833" ref="portfolio"/>
+    <file name="u3046-42.png" crc="12500616" ref="portfolio"/>
+    <file name="u1678-43.png" crc="4012642859" ref="portfolio"/>
+    <file name="u1680-43.png" crc="213315206" ref="portfolio"/>
+    <file name="u1681-4-a3.png" crc="72504557" ref="portfolio"/>
+    <file name="u1682-43.png" crc="4286825602" ref="portfolio"/>
+    <file name="u3046-43.png" crc="3780146400" ref="portfolio"/>
+    <file name="u1678-44.png" crc="3869880815" ref="portfolio"/>
+    <file name="u1680-44.png" crc="33627001" ref="portfolio"/>
+    <file name="u1681-4-a4.png" crc="397911797" ref="portfolio"/>
+    <file name="u1682-44.png" crc="4083202594" ref="portfolio"/>
+    <file name="u3046-44.png" crc="53757894" ref="portfolio"/>
+    <file name="u2999-4.png" crc="133117441" ref="about-me"/>
+    <file name="u3000-4.png" crc="124617144" ref="about-me"/>
+    <file name="u3001-4.png" crc="4093651395" ref="about-me"/>
+    <file name="u3002-4-a.png" crc="116589833" ref="about-me"/>
+    <file name="u1887-16.png" crc="3982313119" ref="about-me"/>
+    <file name="pasted-svg-940787x517.svg" crc="3964140589" seo="true" ref="about-me">
+      <caption webpage="about-me" alt=""/>
+      <caption webpage="about-me" alt=""/>
+      <caption webpage="about-me" alt=""/>
+      <caption webpage="about-me" alt=""/>
+      <caption webpage="about-me" alt=""/>
+    </file>
+    <file name="pasted svg 940787x517_poster_.png" crc="47296069" ref="about-me"/>
+    <file name="pasted-svg-551528x339.svg" crc="462915143" seo="true" ref="about-me">
+      <caption webpage="about-me" alt=""/>
+      <caption webpage="about-me" alt=""/>
+      <caption webpage="about-me" alt=""/>
+      <caption webpage="about-me" alt=""/>
+      <caption webpage="about-me" alt=""/>
+    </file>
+    <file name="pasted svg 551528x339_poster_.png" crc="390137715" ref="about-me"/>
+    <file name="img_0015-edit.jpg" crc="133364516" ref="about-me">
+      <caption webpage="about-me" alt=""/>
+    </file>
+    <file name="u1887-162.png" crc="3772974675" ref="about-me"/>
+    <file name="u3000-42.png" crc="124617144" ref="about-me"/>
+    <file name="u3001-42.png" crc="4093651395" ref="about-me"/>
+    <file name="u3002-4-a2.png" crc="116589833" ref="about-me"/>
+    <file name="u2999-42.png" crc="133117441" ref="about-me"/>
+    <file name="img_0015-edit960x640.jpg" crc="265088801" ref="about-me">
+      <caption webpage="about-me" alt=""/>
+    </file>
+    <file name="u2999-43.png" crc="133117441" ref="about-me"/>
+    <file name="u3000-43.png" crc="3928154728" ref="about-me"/>
+    <file name="u3001-43.png" crc="4093651395" ref="about-me"/>
+    <file name="u3002-4-a3.png" crc="116589833" ref="about-me"/>
+    <file name="u1887-163.png" crc="359753307" ref="about-me"/>
+    <file name="img_0015-edit768x512.jpg" crc="135149817" ref="about-me">
+      <caption webpage="about-me" alt=""/>
+    </file>
+    <file name="u2999-44.png" crc="4012642859" ref="about-me"/>
+    <file name="u3000-44.png" crc="213315206" ref="about-me"/>
+    <file name="u3001-44.png" crc="72504557" ref="about-me"/>
+    <file name="u3002-4-a4.png" crc="4286825602" ref="about-me"/>
+    <file name="u1887-164.png" crc="328902733" ref="about-me"/>
+    <file name="img_0015-edit480x320.jpg" crc="535288597" ref="about-me">
+      <caption webpage="about-me" alt=""/>
+    </file>
+    <file name="u2999-45.png" crc="3869880815" ref="about-me"/>
+    <file name="u3000-45.png" crc="33627001" ref="about-me"/>
+    <file name="u3001-45.png" crc="397911797" ref="about-me"/>
+    <file name="u3002-4-a5.png" crc="4083202594" ref="about-me"/>
+    <file name="u1887-165.png" crc="292990582" ref="about-me"/>
+    <file name="img_0015-edit320x213.jpg" crc="470024667" ref="about-me">
+      <caption webpage="about-me" alt=""/>
+    </file>
+    <file name="u2905-4-a.png" crc="133117441" ref="contact"/>
+    <file name="u2906-4.png" crc="124617144" ref="contact"/>
+    <file name="u2907-4.png" crc="4093651395" ref="contact"/>
+    <file name="u2908-4.png" crc="116589833" ref="contact"/>
+    <file name="u2474.png" crc="3858060630" ref="contact"/>
+    <file name="u2474-r.png" crc="420354873" ref="contact"/>
+    <file name="img_0353-edit.jpg" crc="15612252" ref="contact">
+      <caption webpage="contact" alt=""/>
+      <caption webpage="contact" alt=""/>
+    </file>
+    <file name="u2905-4-a2.png" crc="133117441" ref="contact"/>
+    <file name="u2906-42.png" crc="3928154728" ref="contact"/>
+    <file name="u2907-42.png" crc="4093651395" ref="contact"/>
+    <file name="u2908-42.png" crc="116589833" ref="contact"/>
+    <file name="u24742.png" crc="288392321" ref="contact"/>
+    <file name="u2474-r2.png" crc="3962767944" ref="contact"/>
+    <file name="u2905-4-a3.png" crc="4012642859" ref="contact"/>
+    <file name="u2906-43.png" crc="213315206" ref="contact"/>
+    <file name="u2907-43.png" crc="72504557" ref="contact"/>
+    <file name="u2908-43.png" crc="4286825602" ref="contact"/>
+    <file name="u24743.png" crc="306775741" ref="contact"/>
+    <file name="u2474-r3.png" crc="184828788" ref="contact"/>
+    <file name="img_0353-edit960x640.jpg" crc="4135906887" ref="contact">
+      <caption webpage="contact" alt=""/>
+    </file>
+    <file name="u24744.png" crc="158654075" ref="contact"/>
+    <file name="u2474-r4.png" crc="3965798174" ref="contact"/>
+    <file name="u2905-4-a4.png" crc="3869880815" ref="contact"/>
+    <file name="u2906-44.png" crc="33627001" ref="contact"/>
+    <file name="u2907-44.png" crc="397911797" ref="contact"/>
+    <file name="u2908-44.png" crc="4083202594" ref="contact"/>
+    <file name="img_0353-edit640x427.jpg" crc="84704189" ref="contact">
+      <caption webpage="contact" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="166847481" seo="true" mt="1503791476190" redirect="true"/>
+  <file name="portfolio.html" crc="3894479902" seo="true" mt="1503792352476" redirect="true"/>
+  <file name="about-me.html" crc="462029808" seo="true" mt="1503791658453" redirect="true"/>
+  <file name="contact.html" crc="488301966" seo="true" mt="1503792348750" redirect="true"/>
+</manifest>
